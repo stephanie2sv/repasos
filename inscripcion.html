@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icons8-gym-50.png">
+    <link rel="stylesheet" href="styles.css"">
+    <title>Inscripcion Actividades</title>
+</head>
+<body>
+    <form action="mailto:gym@testing.com" method="post" name="inscripcion" enctype="multipart/form-data">
+        <h1>Actividades dirigidas</h1>
+        <p>La inscripción a las actividades se puede hacer con hasta 2 días de antelación y cancelarse con hasta 4 horas antes de la clase.</p>
+        <fieldset>
+            <legend>Datos Personales</legend>
+                <div><span> Nombre</span> <input type="text" id="nombre" name="nombre"  placeholder="Eg: Maria" required></div>
+                <div><span> Apellidos</span> <input type="text" id="apellidos" name="apellidos"  placeholder="Eg: Perez Fa" required></div>
+                <legend>¿Es usted miembro del gimnasio?
+                    <input type="radio" name="miembro" value="si" checked >Si
+                    <input type="radio" name="miembro" value="no" >No
+                
+                <div><span>Código de miembro</span><input type="text" name="codigo" placeholder="Número en tu accesscard"></div>
+            </legend>
+                <div>¿Alguna condición especial que debamos saber?</div>
+                <textarea cols="25" rows="3" placeholder="Embarazo, problema cardiaco..."></textarea>
+        </fieldset>
+        <fieldset>
+            <legend> Datos de la clase</legend>
+            <div> <p> Selecciona la clase que desea realizar
+                <select name="tipoClase">
+                    <option value="1">Fitness</option>
+                    <option value="2">Gimnasia</option>
+                    <option value="3">A.D.M</option>
+                </select>
+            </p></div>
+            <div>Fecha deseada:</div>
+            <input type="date" id="fecha" name="fecha" max="15/03/2024">
+            <div>Turno a elegir</div>
+            <div id="turnoMañ">Mañanas</div><input type="checkbox" id="radio" name="radio"> Fitness 9h a 12h
+            <div>Tardes</div>
+            <select name="turnoClase">
+                <option value="1">Fitness 16h30 a 18h30</option>
+                <option value="2">Fitness 18h a 22h</option>
+                <option value="3">Gimnasia 19h a 20h</option>
+                <option value="4">Gimnasia 20h a 21h</option>
+                <option value="5">A.M.D 21h a 22h</option>
+            </select>
+        </fieldset>
+
+       
+        <span><button type="submit" value="Enviar">Enviar</button></span><span><button type="reset">Reset</button></span>
+    </form>
+</body>
+</html>

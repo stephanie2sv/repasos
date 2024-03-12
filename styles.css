@@ -1,0 +1,125 @@
+
+body{
+   align-content: center;
+   align-items: center;
+   margin: auto;
+}
+
+
+table  {
+    text-align: center;
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 750px;
+    height: 600px;
+    margin: 25px auto auto ;
+    
+
+}
+caption{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+td{
+    width: 100px;
+    height: 80px;
+    border: 2px solid black;
+    empty-cells: show;
+}
+
+
+td.turno{
+height: 50px;
+background-color: rgb(211, 211, 178);
+font-size: large;
+font-weight: bold;
+}
+
+td.dia{
+    background-color: rgb(225, 225, 176);
+    font-size: large;
+    font-weight: bold;
+}
+
+td.fitness{
+    background-color: rgb(72, 147, 217);
+}
+td.am{
+    background-color: rgb(181, 139, 248);
+}
+td.gim{
+        background-color: rgb(134, 205, 189);
+    
+}
+td.gris{
+    background-color: rgba(151, 141, 141, 0.601);
+}
+
+
+.claseLu{
+    font-size: large;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+
+.horaLu{
+    font-size: medium;
+    font-weight: 600;
+    margin-top: 50px;
+
+}
+
+
+.clase{
+    font-size: large;
+    font-weight: 600;
+}
+
+.hora{
+    font-size: small;
+    font-weight: 500;
+
+}
+
+.d{
+    font-size: large;
+    font-weight: 500;
+    margin: 25px auto auto;
+}
+
+
+form{
+    width: 600px;
+    height: 500px;
+    margin: auto;
+    font-family: "Barlow";
+    
+   
+}
+
+@font-face{
+    src:url(fuente/BarlowCondensed-Medium.ttf) format('truetype');
+    font-family:"Barlow";
+}
+
+h1{
+    text-align: center;
+}
+div{
+    margin-top: 10px;
+}
+span{
+    margin-top: 10px;
+}
+
+button{
+    width: 60px;
+    height: 20px;
+    margin: 10px 55px auto 140px;
+}
+
+select:hover{
+    background-color: aliceblue;
+    color: brown;
+}
